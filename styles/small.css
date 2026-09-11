@@ -1,14 +1,11 @@
 :root {
     --primary-color: #1b365d;
-    --secondary-color: #d97706;
+    --secondary-color: #92400e; /* Updated to pass WCAG AA 4.5:1 ratio */
     --background-color: #f4f6f8;
     --card-bg: #ffffff;
     --text-color: #1f2937;
-    --completed-bg: #dcfce7;
-    --completed-border: #16a34a;
-    --incomplete-bg: #fee2e2;
-    --incomplete-border: #dc2626;
 }
+
 
 body {
     font-family: 'Roboto', sans-serif;

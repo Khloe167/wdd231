@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    
     <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -43,25 +43,33 @@
     </header>
 
     <main>
-        <h1>Home</h1>
-        <div class="grid-container">
-            <section class="card">
-                <h2>About Me</h2>
-                <p>Welcome to my course home page. I am studying Web and Computer Programming to improve my software development skills.</p>
-            </section>
+    <h1>Home</h1>
+    <div class="grid-container">
+        <!-- Section 1 -->
+        <section class="card">
+            <h2>About Me</h2>
+            <p>Welcome to my course home page. I am studying Web and Computer Programming.</p>
+        </section>
 
-            <section class="card">
-                <h2>Web and Computer Programming Certificate</h2>
-                <div class="filter-buttons">
-                    <button id="all">All</button>
-                    <button id="cse">CSE</button>
-                    <button id="wdd">WDD</button>
-                </div>
-                <div id="courses-container" class="courses-grid"></div>
-                <p class="credits-info">Total Credits Required: <span id="total-credits">0</span></p>
-            </section>
-        </div>
-    </main>
+        <!-- Section 2 -->
+        <section class="card">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="courses-container" class="courses-grid"></div>
+            <p class="credits-info">Total Credits Required: <span id="total-credits">0</span></p>
+        </section>
+
+        <!-- Section 3 (NEW) -->
+        <section class="card">
+            <h2>Course Resources</h2>
+            <p>Useful links and tools for WDD 231 coursework and project development.</p>
+        </section>
+    </div>
+</main>
 
     <footer>
         <div class="social-links">
