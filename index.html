@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Course Home Page</title>
+    <meta name="description" content="Course Home Page for WDD 231 Web Frontend Development I.">
+    <meta name="author" content="Agbah Chloe">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript (Deferred) -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <!-- SVG Logo Placeholder -->
+            <svg class="logo" viewBox="0 0 100 100" width="40" height="40" aria-label="Site Logo">
+                <circle cx="50" cy="50" r="45" fill="#1b365d" />
+                <text x="50%" y="55%" text-anchor="middle" fill="#ffffff" font-size="30" font-weight="bold" dy=".3em">W</text>
+            </svg>
+            <span>Your Name</span>
+        </div>
+        <button id="menu" aria-label="Toggle Navigation"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="grid-container">
+            <section class="card">
+                <h2>About Me</h2>
+                <p>Welcome to my course home page. I am studying Web and Computer Programming to improve my software development skills.</p>
+            </section>
+
+            <section class="card">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="filter-buttons">
+                    <button id="all">All</button>
+                    <button id="cse">CSE</button>
+                    <button id="wdd">WDD</button>
+                </div>
+                <div id="courses-container" class="courses-grid"></div>
+                <p class="credits-info">Total Credits Required: <span id="total-credits">0</span></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> | Agbah Chloe | Lagos, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
