@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Beacon Tech Solutions",
+    "address": "123 Innovation Way, Suite 100",
+    "phone": "(555) 019-2831",
+    "website": "https://beacontechsolutions.com",
+    "image": "beacon-tech.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Green Leaf Cafe",
+    "address": "456 Main Street",
+    "phone": "(555) 014-9922",
+    "website": "https://greenleafcafe.com",
+    "image": "green-leaf.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Summit Financial Services",
+    "address": "789 Pine Avenue",
+    "phone": "(555) 018-3341",
+    "website": "https://summitfinancialservices.com",
+    "image": "summit-financial.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Harbor Auto Repair",
+    "address": "101 Dock Road",
+    "phone": "(555) 012-7711",
+    "website": "https://harborautorepair.com",
+    "image": "harbor-auto.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Apex Marketing Group",
+    "address": "202 Center St, Suite 4",
+    "phone": "(555) 015-8822",
+    "website": "https://apexmarketing.com",
+    "image": "apex-marketing.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Valley Fitness Club",
+    "address": "303 Commerce Blvd",
+    "phone": "(555) 011-4455",
+    "website": "https://valleyfitness.com",
+    "image": "valley-fitness.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Riverbend Printing",
+    "address": "505 Heritage Lane",
+    "phone": "(555) 017-6633",
+    "website": "https://riverbendprinting.com",
+    "image": "riverbend-print.jpg",
+    "membership": 2
+  }
+]

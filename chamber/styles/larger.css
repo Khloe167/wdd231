@@ -1,0 +1,15 @@
+@media (min-width: 640px) {
+    #menu-btn {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+}
