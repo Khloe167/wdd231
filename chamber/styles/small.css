@@ -184,6 +184,11 @@ footer {
     animation: fadeInUp 0.6s ease-out forwards;
 }
 
+/* Stagger delays using external CSS selectors */
+.membership-card:nth-of-type(1) { animation-delay: 0s; }
+.membership-card:nth-of-type(2) { animation-delay: 0.15s; }
+.membership-card:nth-of-type(3) { animation-delay: 0.3s; }
+.membership-card:nth-of-type(4) { animation-delay: 0.45s; }
 /* Modals */
 dialog {
     border: none;
