@@ -102,4 +102,120 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+}/* Join Form & Layout */
+.join-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.join-form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form select,
+.join-form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.join-form textarea {
+    height: 100px;
+}
+
+.submit-btn {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: var(--primary-color, #1b365d);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Membership Level Cards */
+.membership-card {
+    border: 1px solid #ddd;
+    background-color: var(--card-bg, #f8f9fa);
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.modal-link {
+    background-color: var(--accent-color, #f4a261);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+/* Entrance Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-card {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Modals */
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.close-modal {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Thank You Results Card */
+.results-card {
+    background-color: var(--card-bg, #ffffff);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.results-card p {
+    margin: 0.75rem 0;
 }

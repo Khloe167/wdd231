@@ -12,4 +12,11 @@
         color: white;
         text-decoration: none;
     }
+}@media (min-width: 768px) {
+    /* Form on left, cards on right */
+    .join-layout {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        align-items: start;
+    }
 }

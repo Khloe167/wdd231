@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 | Thank You</title>
+    <meta name="description" content="Thank you for submitting your membership application to the Magodo Chamber of Commerce.">
+    <meta name="author" content="Chloe Tega Agbah">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Thank You | Magodo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://khloe167.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https://khloe167.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:description" content="Membership application confirmation details.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript Link -->
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/favicon.ico" alt="Chamber Logo" width="50" height="50">
+        </div>
+        <nav>
+            <button id="menu-btn" aria-label="Toggle Navigation Menu">☰</button>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Magodo Chamber of Commerce</h1>
+        <h2>Application Received</h2>
+        
+        <p>Thank you for submitting your application! Here is a summary of the details you submitted:</p>
+        
+        <div id="results" class="results-card"></div>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Magodo Chamber of Commerce</strong></p>
+            <p>10B Mussco, Magodo, Lagos</p>
+            <p>info@magodochamber.org | (816) 226-0760</p>
+        </div>
+        <div class="footer-dev">
+            <p>&copy; <span id="currentyear"></span> | Chloe Tega Agbah | WDD 231</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
