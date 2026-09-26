@@ -99,7 +99,11 @@ function displaySpotlights(members) {
         card.classList.add('spotlight-card');
 
         card.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name} Logo" loading="lazy">
+            <img src="images/${member.image}" 
+            alt="${member.name} Logo"
+            width="200" 
+            height="120"
+            loading="lazy">
             <h3>${member.name}</h3>
             <p>${member.phone}</p>
             <p>${member.address}</p>
