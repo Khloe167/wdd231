@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Chloe Tega Agbah">
+<meta name="description" content="Send a technology question or suggestion to NovaTech Hub using the contact form.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact | NovaTech Hub">
+<meta property="og:description" content="Send a technology question or suggestion to NovaTech Hub using the contact form.">
+<meta property="og:image" content="images/gadget.svg">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles/styles.css">
+<title>Contact | NovaTech Hub</title>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap header-inner">
+<a class="brand" href="index.html">NovaTech Hub</a>
+<button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false">☰ Menu</button>
+<nav class="nav-links" id="main-nav" aria-label="Main navigation">
+<a href="index.html" >Home</a>
+<a href="gadgets.html" >Gadget Explorer</a>
+<a href="contact.html" aria-current="page">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class("section wrap"):
+<h1>Contact NovaTech Hub</h1>
+<div class("contact-layout"):
+<div><h2>Ask a tech question</h2><p>Have a gadget topic you want explained? Share your question or suggest a guide for the website.</p><div class("notice"):
+<strong>Demo form:</strong> Submitting displays your information on a separate results page. No message is sent to a server.
+</div>
+</div>
+<form action("thanks.html") method("get")>
+<div class("form-field"):
+<label for("full-name")>Full name *</label>
+<input id("full-name") name("name") autocomplete("name") required minlength("2") maxlength("80")>
+</div>
+<div class("form-field"):
+<label for("email")>Email address *</label>
+<input id("email") name("email") type("email") autocomplete("email") required>
+</div>
+<div class("form-field"):
+<label for("topic")>Topic *</label>
+<select id("topic") name("topic") required>
+<option value("")>Choose a topic</option>
+<option>Gadget recommendation</option>
+<option>Tech news</option>
+<option>Website feedback</option>
+<option>Other question</option>
+</select>
+</div>
+<div class("form-field"):
+<label for("message")>Your message *</label>
+<textarea id("message") name("message") required minlength("10") maxlength("1000")></textarea>
+</div>
+<button class("primary") type("submit")>Preview my submission</button>
+
+</form>
+
+</div>
+
+</section>
+
+</main>
+
+<footer class("site-footer"):
+<div class("wrap footer-inner"):
+<div>
+<strong>NovaTech Hub</strong>
+<p>Practical guides for smarter tech choices.</p>
+<p class("tiny")>&copy; <span id("year")></span> NovaTech Hub</p>
+</div>
+
+<div>
+<a href("attributions.html")>Attributions</a> · 
+<a href("https://example.com/replace-with-your-video") id("video-link")>Project demonstration video (replace link)</a>
+<p class("tiny")>Sample catalogue data; products are fictional.</p>
+</div>
+
+</div>
+
+</footer>
+
+<script type("module") src("scripts/main.js")></script>
+
+</body>
+
+</html>

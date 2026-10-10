@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Chloe Tega Agbah">
+<meta name="description" content="Filter and explore sixteen fictional gadget listings with details and saved favourites.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gadget Explorer | NovaTech Hub">
+<meta property="og:description" content="Filter and explore sixteen fictional gadget listings with details and saved favourites.">
+<meta property="og:image" content="images/gadget.svg">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles/styles.css">
+<title>Gadget Explorer | NovaTech Hub</title>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap header-inner">
+<a class="brand" href="index.html">NovaTech Hub</a>
+<button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false">☰ Menu</button>
+<nav class="nav-links" id="main-nav" aria-label="Main navigation">
+<a href="index.html" >Home</a>
+<a href="gadgets.html" aria-current="page">Gadget Explorer</a>
+<a href="contact.html" >Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class("section wrap"):
+<h1>Gadget Explorer</h1>
+<p class("intro")>Discover sample gadgets, filter by category, and save favourites to revisit later. All products and prices are illustrative, not real store offers.</p>
+<div class("tools"):
+<label>Search gadgets
+<input id("search") type("search") placeholder("Try laptop or headphones")>
+</label>
+<label>Category
+<select id("category")>
+<option value("all")>All categories</option>
+<option>Smartphones</option>
+<option>Laptops</option>
+<option>Accessories</option>
+<option>Smart Home</option>
+</select>
+</label>
+<label>View
+<select id("view")>
+<option value("all")>All gadgets</option>
+<option value("saved")>Saved favourites</option>
+</select>
+</label>
+</div>
+<p id("result-count") aria-live("polite")></p>
+<div id("gadget-grid") class("card-grid") aria-live("polite"):
+<p>Loading gadgets…</p>
+</div>
+</section>
+
+<dialog id("details-dialog") aria-labelledby("dialog-title"):
+<button class("secondary dialog-close") type("button") id("close-dialog") aria-label("Close details"):
+✕
+</button>
+<h2 id("dialog-title")></h2>
+<div id("dialog-content")></div>
+
+</dialog>
+
+</main>
+
+<footer class("site-footer"):
+<div class("wrap footer-inner"):
+<div><strong>NovaTech Hub</strong>
+<p>Practical guides for smarter tech choices.</p>
+<p class("tiny")>&copy; <span id("year")></span> NovaTech Hub</p></div>
+
+<div>
+<a href("attributions.html")>Attributions</a> · 
+<a href("https://example.com/replace-with-your-video") id("video-link")>Project demonstration video (replace link)</a>
+<p class("tiny")>Sample catalogue data; products are fictional.</p></div>
+</div>
+</footer>
+<script type("module") src("scripts/main.js")></script>
+</body>
+</html>

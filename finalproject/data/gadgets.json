@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": "Nova One",
+    "category": "Smartphones",
+    "description": "Everyday smartphone",
+    "price": 299,
+    "rating": 4.1,
+    "feature": "Easy to use"
+  },
+  {
+    "id": 2,
+    "name": "Pixel Breeze",
+    "category": "Smartphones",
+    "description": "Photography focused phone",
+    "price": 449,
+    "rating": 4.2,
+    "feature": "Compact design"
+  },
+  {
+    "id": 3,
+    "name": "Orbit Max",
+    "category": "Smartphones",
+    "description": "Large display phone",
+    "price": 529,
+    "rating": 4.3,
+    "feature": "Versatile features"
+  },
+  {
+    "id": 4,
+    "name": "Pocket Lite",
+    "category": "Smartphones",
+    "description": "Compact budget phone",
+    "price": 189,
+    "rating": 4.4,
+    "feature": "Battery friendly"
+  },
+  {
+    "id": 5,
+    "name": "Zen Pro",
+    "category": "Smartphones",
+    "description": "Premium performance phone",
+    "price": 699,
+    "rating": 4.5,
+    "feature": "Easy to use"
+  },
+  {
+    "id": 6,
+    "name": "StudyBook 14",
+    "category": "Laptops",
+    "description": "Lightweight student laptop",
+    "price": 499,
+    "rating": 4.6,
+    "feature": "Compact design"
+  },
+  {
+    "id": 7,
+    "name": "Creator 15",
+    "category": "Laptops",
+    "description": "Creative work laptop",
+    "price": 899,
+    "rating": 4.7,
+    "feature": "Versatile features"
+  },
+  {
+    "id": 8,
+    "name": "Swift Air",
+    "category": "Laptops",
+    "description": "Portable productivity laptop",
+    "price": 649,
+    "rating": 4.8,
+    "feature": "Battery friendly"
+  },
+  {
+    "id": 9,
+    "name": "CodeMate",
+    "category": "Laptops",
+    "description": "Developer-friendly laptop",
+    "price": 749,
+    "rating": 4.0,
+    "feature": "Easy to use"
+  },
+  {
+    "id": 10,
+    "name": "Everyday 13",
+    "category": "Laptops",
+    "description": "Affordable everyday laptop",
+    "price": 399,
+    "rating": 4.1,
+    "feature": "Compact design"
+  },
+  {
+    "id": 11,
+    "name": "Wave Buds",
+    "category": "Accessories",
+    "description": "Wireless earbuds",
+    "price": 59,
+    "rating": 4.2,
+    "feature": "Versatile features"
+  },
+  {
+    "id": 12,
+    "name": "PowerGo",
+    "category": "Accessories",
+    "description": "Portable power bank",
+    "price": 39,
+    "rating": 4.3,
+    "feature": "Battery friendly"
+  },
+  {
+    "id": 13,
+    "name": "QuietSound",
+    "category": "Accessories",
+    "description": "Over-ear headphones",
+    "price": 119,
+    "rating": 4.4,
+    "feature": "Easy to use"
+  },
+  {
+    "id": 14,
+    "name": "Glow Lamp",
+    "category": "Smart Home",
+    "description": "Adjustable smart lighting",
+    "price": 49,
+    "rating": 4.5,
+    "feature": "Compact design"
+  },
+  {
+    "id": 15,
+    "name": "Home Mini",
+    "category": "Smart Home",
+    "description": "Compact smart speaker",
+    "price": 79,
+    "rating": 4.6,
+    "feature": "Versatile features"
+  },
+  {
+    "id": 16,
+    "name": "Secure Cam",
+    "category": "Smart Home",
+    "description": "Indoor monitoring camera",
+    "price": 99,
+    "rating": 4.7,
+    "feature": "Battery friendly"
+  }
+]

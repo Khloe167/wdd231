@@ -1,0 +1,21 @@
+import { loadGadgets, readSaved, toggleSaved, escapeHTML } from './utils.js';
+const menu = document.querySelector('.menu-toggle');
+const nav = document.querySelector('#main-nav');
+menu?.addEventListener('click', () => { const open = menu.getAttribute('aria-expanded') !== 'true'; menu.setAttribute('aria-expanded', String(open)); nav.classList.toggle('open', open); });
+document.querySelector('#year').textContent = new Date().getFullYear();
+const grid = document.querySelector('#gadget-grid');
+const featured = document.querySelector('#featured-grid');
+const dialog = document.querySelector('#details-dialog');
+let gadgets = [];
+function card(item) { const saved = readSaved().includes(item.id); return `<article class="card"><img src="images/gadget.svg" alt="Illustration representing ${escapeHTML(item.category)}" width="480" height="300" loading="lazy"><div class="card-body"><p class="meta">${escapeHTML(item.category)} · Rating ${item.rating}/5</p><h3>${escapeHTML(item.name)}</h3><p>${escapeHTML(item.description)}</p><p class="price">Illustrative price: $${item.price}</p><div class="card-actions"><button class="primary" type="button" data-detail="${item.id}">Details</button><button class="secondary" type="button" data-save="${item.id}" aria-pressed="${saved}">${saved ? '★ Saved' : '☆ Save'}</button></div></div></article>`; }
+function render() { if (!grid) return; const term = document.querySelector('#search').value.trim().toLowerCase(); const category = document.querySelector('#category').value; const view = document.querySelector('#view').value; const saved = readSaved(); const matches = gadgets.filter(item => (category === 'all' || item.category === category) && (view === 'all' || saved.includes(item.id)) && `${item.name} ${item.description} ${item.category}`.toLowerCase().includes(term)); grid.innerHTML = matches.length ? matches.map(card).join('') : '<p class="empty">No matching gadgets. Try another search or filter.</p>'; document.querySelector('#result-count').textContent = `${matches.length} gadget${matches.length === 1 ? '' : 's'} shown`; }
+function showDetails(id) { const item = gadgets.find(entry => entry.id === id); if (!item || !dialog) return; document.querySelector('#dialog-title').textContent = item.name; document.querySelector('#dialog-content').innerHTML = `<p><strong>Category:</strong> ${escapeHTML(item.category)}</p><p>${escapeHTML(item.description)}</p><p><strong>Highlight:</strong> ${escapeHTML(item.feature)}</p><p><strong>Illustrative price:</strong> $${item.price}</p><p><strong>Sample rating:</strong> ${item.rating}/5</p>`; dialog.showModal(); }
+const handleCardClick = event => { const detail = event.target.closest('[data-detail]'); const save = event.target.closest('[data-save]'); if (detail) showDetails(Number(detail.dataset.detail)); if (save) { toggleSaved(Number(save.dataset.save)); render(); if (featured) featured.innerHTML = gadgets.slice(0,3).map(card).join(''); } };
+grid?.addEventListener('click', handleCardClick);
+featured?.addEventListener('click', handleCardClick);
+document.querySelector('#close-dialog')?.addEventListener('click', () => dialog.close());
+dialog?.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+['search','category','view'].forEach(id => document.querySelector(`#${id}`)?.addEventListener(id === 'search' ? 'input' : 'change', render));
+if (grid || featured) { try { gadgets = await loadGadgets(); render(); if (featured) featured.innerHTML = gadgets.slice(0,3).map(card).join(''); } catch (error) { const message = '<p class="notice" role="alert">Gadgets could not load. Run this project using a local web server and try again.</p>'; if (grid) grid.innerHTML = message; if (featured) featured.innerHTML = message; console.error('Gadget data failed to load:', error); } }
+const results = document.querySelector('#form-results');
+if (results) { const params = new URLSearchParams(window.location.search); const fields = [['name','Name'],['email','Email'],['topic','Topic'],['message','Message']]; results.replaceChildren(); for (const [key,label] of fields) { const dt = document.createElement('dt'); dt.textContent = label; const dd = document.createElement('dd'); dd.textContent = params.get(key) || 'Not provided'; results.append(dt,dd); } }
