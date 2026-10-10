@@ -1,0 +1,52 @@
+/* NovaTech Hub site plan */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #FFFFFF;
+  color: #14213D;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+h1, h2, h3, .heading-sample { font-family: 'Poppins', sans-serif; }
+header, footer {
+  background: #14213D;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 24px 16px;
+}
+header h1 { margin: 0; }
+main { max-width: 900px; margin: auto; padding: 20px; }
+section {
+  padding: 20px;
+  margin: 0 0 20px;
+  border: 1px solid #14213D;
+  border-radius: 8px;
+}
+h2 { border-bottom: 3px solid #007C91; padding-bottom: 8px; }
+li { margin-bottom: 8px; }
+.swatches { display: flex; flex-wrap: wrap; gap: 12px; }
+.swatch {
+  flex: 1 1 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 18px;
+  border-radius: 6px;
+  text-align: center;
+}
+.navy { background: #14213D; color: #FFFFFF; }
+.cyan { background: #007C91; color: #FFFFFF; }
+.white { background: #FFFFFF; color: #14213D; border: 1px solid #14213D; }
+.wireframes { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.placeholder {
+  border: 2px dashed #007C91;
+  border-radius: 6px;
+  padding: 40px 16px;
+  text-align: center;
+}
+.wireframe-image { width: 100%; height: auto; display: block; }
+@media (max-width: 600px) {
+  main { padding: 12px; }
+  section { padding: 15px; }
+  .wireframes { grid-template-columns: 1fr; }
+}
