@@ -30,3 +30,35 @@
         align-items: start;
     }
 }
+/* Tablet: 641px - 1024px */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  #places {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "place1 place2"
+      "place3 place4"
+      "place5 place6"
+      "place7 place8";
+  }
+}
+
+/* Desktop: 1025px and above */
+@media screen and (min-width: 1025px) {
+  #places {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-areas:
+      "place1 place2 place3 place4"
+      "place5 place6 place7 place8";
+  }
+}
+
+/* Hover effect - Not on mobile */
+@media screen and (min-width: 641px) and (hover: hover) {
+  .place-card img {
+    transition: transform 0.3s ease;
+  }
+
+  .place-card img:hover {
+    transform: scale(1.05);
+  }
+}
